@@ -13,6 +13,9 @@ h3, p{
 body{
   background-image: url(../IMG/portafolio-portadas-bg-50-mod.jpg);
 }
+img{
+  object-fit: contain;
+}
 
 /*buttons*/
 .button-mio{
