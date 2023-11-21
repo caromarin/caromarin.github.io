@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Carolina marin Diseno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./IMG/logo-carolina-marin_favicon.png" >
+  </head>
+<body >
+  <header>
+        
+    <nav class="navbar navbar-expand-lg navbar-color navbar-dark ">
+      <div class="container">
+      <a class="navbar-brand" href="#Inicio">
+        <img src="./IMG/logo carolina marin-06.png" width="auto" height="50" alt="">        
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+        
+            <li class="nav-item">
+              <a class="nav-link " href="#mitrabajo">My Work</a>
+            </li> 
+                  <li class="nav-item">
+                    <a class="nav-link " href="#acercade">About Me</a>
+                  </li>
+            <li class="nav-item">
+                    <a class="nav-link " href="#Contacto">Contact</a>
+                  </li> 
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container mt-5">
+
+    <h2>UX/UI - Food Vendor App</h2>
+    <p> As an exercise for the Google Specialized Program I had to creat an app that will facilitate the purchase of pet food, make the ordering automatic and keep track of the efficiency of the food brand for each pet nutritional requirements
+    </p>
+  </section>
+  <section class="container">
+  <div class="row">
+
+    <div class="col-6 p-2">
+      <img src="IMG/portfolio slides/slide 5.png" width="100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class=" col-6 p-2">
+      <img src="IMG/portfolio slides/slide 5.png" width="100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class=" col-6 p-2">
+      <img src="IMG/portfolio slides/slide 7.png" width="100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="col-6 p-2">
+      <img src="IMG/portfolio slides/slide 8.png" width="100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div>
+  
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="IMG/portfolio slides/slide 5.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="IMG/portfolio slides/slide 6.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="IMG/portfolio slides/slide 7.png" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="IMG/portfolio slides/slide 8.png" style="width:100%">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+
+  
+  <!--
+      <div class="column">
+        <img class="demo cursor" src="IMG/portfolio slides/slide 1.png" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="IMG/portfolio slides/slide 2.png" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="IMG/portfolio slides/slide 3.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="IMG/portfolio slides/slide 4.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+    </div>
+  </div>
+      
+  -->
+  <script>
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+  </section>
+  <section class="container">
+    <h2 >Other Work</h2>
+          <div class="row">
+            <div class="col-3  p-2 ">
+              <a href="project1.html" > <img src="IMG/portfolio slides/slide 1.png" class="paragraph-bg" width="100%" alt="" ></a>
+  
+            </div>
+            <div class="col-3  p-2  ">
+              <a href="project2.html" > <img src="IMG/portfolio slides/slide 5.png" class="paragraph-bg"width="100%" alt=""></a>
+  
+            </div>
+            <div class="col-3  p-2  ">
+              <a href="project3.html" > <img src="IMG/portfolio slides/slide 10.png" class="paragraph-bg" width="100%" alt=""></a>
+  
+            </div>
+            <div class="col-3  p-2  ">
+              <a href="project4.html" > <img src="IMG/portfolio slides/slide 13.png" class="paragraph-bg" width="100%" alt=""></a>
+  
+            </div>
+  
+          </div>
+  </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>  
+</body>
+<footer>
+  <section class=" container contact-bg mt-5 text-secondary  " id="Contacto">
+
+<div class="col-12 pb-5 pt-3  text-center">
+  <h2 class="">Get in Touch</h2>
+  
+    <a class="" href="mailto:marinarechiga.c@gmail.com" target="_blank"><i  class="fa">&#xf0e0;</i> marinarechiga.c@gmail.com</a> <br>
+    <a  class="" href="https://www.linkedin.com/in/paloma-mar%C3%ADn-ar%C3%A9chiga-3b2206152/" target="_blank"><i class="fa">&#xf08c;</i> Paloma Carolina Marín</a> <br>
+    <a class="" href="tel:+1525566335501" target="_blank"><i class="fa">&#xf095;</i> 55 6633 5501</a> <br>
+  
+            
+   
+   
+</div>
+
+</section>
+
+</footer> 
