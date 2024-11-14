@@ -1,0 +1,77 @@
+/*body */
+h1, h2, h1, h2{
+    font-family:  "Roboto", sans-serif;
+  }
+  h3, p{
+    color: #6c757d;
+    font-weight: 300 !important;
+  }
+  
+  * {
+    box-sizing: border-box;
+    text-align: center;
+    color: #4F616D;
+  }
+  body{
+    background-image: url(../IMG/prototipo_assets/molecule.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position:center bottom;
+  }
+  a{
+    text-decoration: none !important;
+    color: inherit;
+  }
+
+  /*header*/
+header{
+    background-image: url(../IMG/prototipo_assets/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    text-align: center;
+  }
+.slogan{
+    text-align: center;
+    color: #4F616D;
+    font-weight: 300;
+}
+.btn-def{
+    background-color: #206487;
+    color: #fff;
+}
+.nav_item{
+    display: inline-block;
+    font-size: small;
+}
+.active_screen{
+    color: #206487 !important;
+    font-weight: 600;
+    fill: #206487;
+}
+.card-toast{
+    border-left: 16px solid #62597C;
+}
+.medicion{
+    border-color: #62597C;
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 31px;
+    background-color: #E8DEFF;
+}
+.floating-button{
+  position: sticky;
+  bottom: 124px;
+  left: 340px;
+  z-index: 1000;
+}
+.appeareance{
+  background-color: #fff;
+  border-radius: 24px;
+  width: 48px;
+  height: 48px;
+  box-shadow: 2px 2px 4px #9faab1;
+}
+.boton{
+
+}
