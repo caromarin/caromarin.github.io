@@ -14,7 +14,8 @@
 </head>
 <body class=" col-sm-4">
     <header class=" row align-items-center">
-            <h1 class="p-4 col-9"> Añadir Comida</h1> <button type="button" class="btn col-2">  <a href="./perfil.html"><img src="./IMG/prototipo_assets/account_circle_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></button>
+      <button type="button" class="btn col-2"> <a href="medicion.html"><img src="./IMG/prototipo_assets/undo_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></button>
+            <h2 class="p-4 col-9"> Añadir Comida</h2> <button type="button" class="btn col-2">  <a href="./perfil.html"><img src="./IMG/prototipo_assets/account_circle_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></button>
     </header>
     <main class="container-sm ">
        <section class=" m-2 row gap-3 text-center ">
@@ -39,9 +40,35 @@
             </div>
             </div>
         </div>
-        <div class="row gap-2 justify-content-center">
-          <button class="btn btn-secondary col-5"> <a href="medicion.html">Cancelar</a> </button>
-         <button class="btn btn-def col-5"> <a href="medicion.html">Guardar</a></button>
+        
+          <div id="liveAlertPlaceholder"></div>
+          <div class="row gap-2 justify-content-center">
+            <button class="btn btn-secondary col-5"> <a href="medicion.html">Cancelar</a> </button>
+            <button type="button" class="btn btn-def col-5" id="liveAlertBtn">Guardar</button>
+  
+           <script>
+            const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+          const appendAlert = (message, type) => {
+            const wrapper = document.createElement('div')
+            wrapper.innerHTML = [
+              `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+              `   <div>${message}</div>`,
+              '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+              '</div>'
+            ].join('')
+  
+            alertPlaceholder.append(wrapper)
+          }
+  
+          const alertTrigger = document.getElementById('liveAlertBtn')
+          if (alertTrigger) {
+            alertTrigger.addEventListener('click', () => {
+              appendAlert('Entrada guardada exitosamente', 'success')
+            })
+          }
+           </script>
+           
+          </div>
         </div>
        
        </section>
