@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,7 @@
 </head>
 <body class=" col-sm-4">
     <header class=" row align-items-center">
-            <h1 class="p-4 col-9"> Perfil</h1> <button type="button" class="btn col-2"> <a href="inicio-app.html"><img src="./IMG/prototipo_assets/undo_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></button>
+            <button type="button" class="btn col-2"> <a href="inicio-app.html"><img src="./IMG/prototipo_assets/undo_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></button> <h1 class="p-4 col-9"> Perfil </h1> <button type="button" class="btn col-2"> <a href="./perfil.html"><img src="./IMG/prototipo_assets/account_circle_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></button>
     </header>
     <main class="container-sm ">
        <section class=" m-2 row gap-3 text-center ">
@@ -22,13 +22,84 @@
         <div class="card  col-12">
           <div class="card-body">
             <h5 class="card-title"> Datos personales </h5>
+            <p class="card-text"> Obtener los siguientes datos nos ayudará a determinar los parámetros saludables adecuados a tu perfil </p>
+            <p class="h6"> Nombre </p>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Nombre </label> 
+            </div>
             <div class=" row">
 
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <p> Edad en años </p> 
+                  <div class="row g-2">
+                    <div class="col-md">
+                      <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingInputGrid" placeholder="Escribir">
+                        <label for="floatingInputGrid">Escribir </label>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                <div class="col">
+                  <p> Género </p>
+                  <div class="col-md">
+                    <div class="form-floating">
+                      <select class="form-select" id="floatingSelectGrid">
+                        <option selected>Seleccionar</option>
+                        <option value="1">Femenino</option>
+                        <option value="2">Maculino</option>
+                        <option value="3">Prefiero no decir</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
+
+            <div class="container text-center mt-3">
+              <div class="row">
+                <div class="col">
+                  <div class="row g-2">
+                      <div class="col-md">
+                        <p> Peso en Kg </p> 
+                        <div class="form-floating">
+                          <input type="email" class="form-control" id="floatingInputGrid" placeholder="Escribir" >
+                          <label for="floatingInputGrid">Escribir</label>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="row g-2">
+                      <div class="col-md">
+                          <p> Estatura en cm </p> 
+                          <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInputGrid" placeholder="Escribir" >
+                            <label for="floatingInputGrid">Escribir </label>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+          
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-md-auto">
+          <button class="btn btn-def col-5 m-1"> Guardar </button>
           </div>
         </div>
-        <button type="button" class="btn btn-light"> <a href="./protipo2.html"><img src="./IMG/prototipo_assets/monitor_heart_24dp_206487_FILL0_wght400_GRAD0_opsz24.svg" alt="">Añadir nueva medicion</a> </button>
-        
+      
+      <button type="button" class="btn btn-light"> <a href="./protipo2.html"><img src="./IMG/prototipo_assets/monitor_heart_24dp_206487_FILL0_wght400_GRAD0_opsz24.svg" alt="">Añadir nueva medicion</a> </button>
+      
        </section>
   
 
