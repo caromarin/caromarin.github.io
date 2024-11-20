@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,7 @@
 </head>
 <body class=" col-sm-4">
     <header class=" row align-items-center">
-            <h1 class="p-4 col-9">Ingesta de Medicamento</h1> <button type="button" class="btn col-2">  <a href="./perfil.html"><img src="./IMG/prototipo_assets/account_circle_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></button>
+            <h1 class="p-4 col-9">Medicamento</h1> <button type="button" class="btn col-2">  <a href="./perfil.html"><img src="./IMG/prototipo_assets/account_circle_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></button>
     </header>
     <main class="container-sm ">
        <section class=" m-2 row gap-3 text-center ">
@@ -23,15 +23,15 @@
           <div class="card-body ">
             <h5 class="card-title"> Formula de medicamento</h5>
             <div class="p-3 ">
-              <div class="dropdown">
-                <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown button
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <div class="">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelectGrid">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
               </div>
               
         
@@ -64,19 +64,27 @@
         </div>
        
        </section>
-  
+       <div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+          </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
 
   
        <button type="button" class="btn floating-button "> <img class="appeareance" src="./IMG/prototipo_assets/help_44dp_62597C_FILL0_wght400_GRAD0_opsz48.svg" alt=""> </button>
     </main>
-    <nav class="row pt-3 pb-2 fixed-bottom bg-body-tertiary">
-      <ul class="   justify-content-center   ">
-          <li class=" nav_item col-2 align-top "> <a href="./inicio-app.html" class=""><img src="./IMG/prototipo_assets/home_24dp_4F616D_FILL0_wght400_GRAD0_opsz24.svg" alt=""> <br>Inicio</a></li>
-          <li class="nav_item col-2 align-top"><a href="./informe.html" class=""><img src="./IMG/prototipo_assets/lab_profile_24dp_4F616D_FILL0_wght400_GRAD0_opsz24.svg" alt=""><br>Informe</a> </li>
-          <li class="nav_item col-2 align-top active_screen"><a href="./medicion.html" class=""><img src="./IMG/prototipo_assets/add_circle_24dp_4F616D_FILL0_wght400_GRAD0_opsz24.svg" alt=""><br>Añadir entrada</a> </li>
-          <li class="nav_item col-2 align-top "><a href="./conexiones.html" class=" "><img src="./IMG/prototipo_assets/bluetooth_24dp_4F616D_FILL0_wght400_GRAD0_opsz24.svg" alt=""><br>Conexiones</a></li>
-      </ul>
-  </nav>
+    
+  <nav class="row pt-3 pb-2 fixed-bottom bg-body-tertiary">
+    <ul class="   justify-content-center   ">
+        <li class=" nav_item col-2 align-top active_screen"> <a href="./protipo2.html" class=""><img src="./IMG/prototipo_assets/home_24dp_4F616D_FILL0_wght400_GRAD0_opsz24.svg"> <br>Inicio</a></li>
+        <li class="nav_item col-2 align-top"><a href="./informe.html" class=""><img src="./IMG/prototipo_assets/lab_profile_24dp_4F616D_FILL0_wght400_GRAD0_opsz24.svg" alt=""><br>Informe</a> </li>
+        <li class="nav_item col-2 align-top "><a href="./medicion.html" class=""><img src="./IMG/prototipo_assets/add_circle_24dp_4F616D_FILL0_wght400_GRAD0_opsz24.svg" alt=""><br>Añadir entrada</a> </li>
+        <li class="nav_item col-2 align-top "><a href="./conexiones.html" class=" "><img src="./IMG/prototipo_assets/bluetooth_24dp_4F616D_FILL0_wght400_GRAD0_opsz24.svg" alt=""><br>Conexiones</a></li>
+    </ul>
+</nav>
     <footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

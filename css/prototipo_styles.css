@@ -17,11 +17,15 @@ p{
     background-size: 100%;
     background-position:center bottom;
   }
-  a{
+  a, li{
     text-decoration: none !important;
     color: inherit;
+    text-align: left;
   }
+  ul{
+    list-style-type: none !important;
 
+  }
   /*header*/
 header{
     background-image: url(../IMG/prototipo_assets/header-bg.png);
@@ -60,8 +64,8 @@ header{
 }
 .floating-button{
   position: sticky;
-  bottom: 124px;
-  left: 340px;
+  bottom: 110px;
+  left: 310px;
   z-index: 1000;
 }
 .appeareance{
@@ -70,7 +74,4 @@ header{
   width: 48px;
   height: 48px;
   box-shadow: 2px 2px 4px #9faab1;
-}
-.boton{
-
 }
