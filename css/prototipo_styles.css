@@ -20,7 +20,6 @@ p{
   a, li{
     text-decoration: none !important;
     color: inherit;
-    text-align: left;
   }
   ul{
     list-style-type: none !important;
